@@ -1,0 +1,71 @@
+/* Resume.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #86b0cb;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.contact, .education, .experience, .skills, .portfolio, .pdf, .language {
+    background-color: #c9e8ca;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.frontend, .programming, .testing, .version-control{
+list-style-type: circle;
+}
+
+.contact{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-image {
+            flex: 1;
+            text-align: right;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+/* In your CSS */
+.progress-bar {
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.skill-level {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+}
