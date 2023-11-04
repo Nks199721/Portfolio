@@ -21,8 +21,8 @@ h1 {
     background-color: #c9e8ca;
     margin: 20px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(56 113 238 / 20%);
 }
 
 .frontend, .programming, .testing, .version-control{
