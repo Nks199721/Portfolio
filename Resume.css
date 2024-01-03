@@ -17,7 +17,7 @@ h1 {
     margin: 0;
 }
 
-.contact, .education, .experience, .skills, .portfolio, .pdf, .language {
+.contact, .profile-summary, .education, .experience, .skills, .portfolio, .pdf, .language {
     background-color: #c9e8ca;
     margin: 20px;
     padding: 20px;
