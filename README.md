@@ -31,7 +31,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/nilesh-kumar-sahoo-cv.git
+git clone https://github.com/Nks199721/Portfolio.git
 Navigate to the project directory:
 
 bash
@@ -43,5 +43,7 @@ Open the index.html file in your browser to view the resume.
 Alternatively, you can host the project on a local server using a tool like Live Server in VS Code.
 
 Live Demo
-You can view the live version of this CV at the following link:
-Nilesh Kumar Sahoo - CV
+You can view the live version of this CV at the following links:
+
+Nilesh Kumar Sahoo - [CV](https://nks199721.github.io/Portfolio/)
+Nilesh Kumar Sahoo - [React Portfolio](https://react-portfolio-gamma-pearl.vercel.app/)
