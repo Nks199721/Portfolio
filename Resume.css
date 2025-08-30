@@ -1,80 +1,153 @@
+:root {
+  --bg-color: #f6f8fa;
+  --text-color: #333;
+  --card-bg: #fff;
+  --accent-color: #007bff;
+}
+
+body.dark-mode {
+  --bg-color: #44447b;
+  --text-color: #606255;
+  --card-bg: #27273a;
+  --accent-color: #1abc9c;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #86b0cb;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.4s, color 0.4s;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+h2 { color: var(--text-color); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.4s, color 0.4s;
 }
 
-h1 {
-    margin: 0;
+.header h1 {
+  margin: 0;
+  font-size: 22px;
 }
 
-.contact, .profile-summary, .education, .experience, .skills, .certifications, .projects, .pdf, .language {
-    background-color: #c9e8ca;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 50px rgba(56 113 238 / 20%);
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--accent-color);
+  transition: transform 0.3s, color 0.3s;
+}
+.theme-toggle:hover {
+  transform: rotate(20deg) scale(1.1);
 }
 
-.frontend, .programming, .testing, .version-control{
-    list-style-type: circle;
+.section {
+  background: var(--card-bg);
+  color: var(--text-color);
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  opacity: 0; 
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease, background 0.4s, color 0.4s;
 }
 
-p{
-    margin-top: 0;
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.projects h4{
-    margin-bottom: 0;
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profile-img {
+  border-radius: 50%;
+  max-width: 180px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
-.contact{
-    display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .contact-info {
-            flex: 1;
-        }
-
-        .contact-image {
-            flex: 1;
-            text-align: right;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
-
-h2 {
-    color: #333;
+.skill-card {
+  background: #88fabf;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.4s ease, background 0.3s ease;
 }
-
-ul {
-    list-style-type: square;
+.skill-card:hover {
+  background: #d5e9fb;
+  transform: translateY(-6px) scale(1.03);
 }
 
 a {
-    text-decoration: none;
-    color: #007bff;
+  text-decoration: none;
+  color: var(--accent-color);
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+a:hover::after {
+  width: 100%;
 }
 
-.progress-bar {
-    background-color: #ccc;
-    height: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
+.lang-bar {
+  margin: 10px 0;
+}
+.progress {
+  background: #ddd;
+  height: 12px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-color), #16a085);
+  width: 0; 
+  border-radius: 5px;
 }
 
-
-.skill-level {
-    background-color: #007bff;
-    height: 100%;
-    border-radius: 5px;
+.pdf button {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+.pdf button:hover {
+  background: #0056b3;
 }

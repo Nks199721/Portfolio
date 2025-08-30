@@ -3,260 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nilesh Kumar Sahoo - CV</title>
+    <title>Nilesh Kumar Sahoo - Resume</title>
     <link rel="stylesheet" href="Resume.css" />
-    <script type="module" src="Script.js"></script>
+    <script src="Script.js" defer></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Nilesh Kumar Sahoo</h1>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
     </header>
 
-    <section class="contact">
+    <section id="contact" class="section contact">
       <div class="contact-info">
         <h2>Contact Information</h2>
-        <p>Email: nilesh199721@gmail.com</p>
-        <p>Phone: 8984212140</p>
         <p>
-          Website:
-          <a href="https://www.linkedin.com/in/nileshkssahoo/">linkedin</a>
+          Email:
+          <a href="mailto:nilesh199721@gmail.com">nilesh199721@gmail.com</a>
+        </p>
+        <p>Phone: <a href="tel:8984212140">8984212140</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/nileshkssahoo/" target="_blank"
+            >Visit Profile</a
+          >
         </p>
       </div>
-
       <div class="contact-image">
-        <img src="files/Nilesh_Kumar_Sahoo.jpg" alt="Your Image" width="200" />
+        <img
+          src="files/Nilesh_Kumar_Sahoo.jpg"
+          alt="Profile Image"
+          class="profile-img"
+        />
       </div>
     </section>
 
-    <section class="profile-summary">
+    <section id="summary" class="section profile-summary">
       <h2>Profile Summary</h2>
       <p>
         Passionate Web Developer with expertise in full-stack development,
         focusing on Node.js, React.js, Express.js, SQL, JavaScript, HTML, and
-        Tailwind CSS. Blend of academic learning and practical experience, adept
-        at crafting responsive, user-centric web applications. Committed to
-        continuous learning and adapting to the latest web technologies.
-        Proficient in testing methodologies including manual testing, automation
-        testing with Selenium frameworks, and Python programming. Actively
-        seeking opportunities to contribute to dynamic teams and exciting web
-        projects, fostering continuous growth as a full-stack developer.
+        Tailwind CSS. Skilled in manual and automation testing with Selenium.
+        Seeking opportunities to contribute and grow as a full-stack developer.
       </p>
     </section>
 
-    <!-- <section class="experience">
-        <h2>Work Experience</h2>
-        <p><strong>Job Title</strong> - Company Name - Dates</p>
-        <ul>
-            <li>--------------------</li>
-            <li>--------------------</li>
-        </ul>
-    </section> -->
-
-    <section class="skills">
+    <section id="skills" class="section skills">
       <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React.js, Bootstrap, Tailwind</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, REST APIs</p>
+        </div>
+        <div class="skill-card">
+          <h3>Database</h3>
+          <p>SQL, MySQL, PostgreSQL</p>
+        </div>
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <h3>Testing</h3>
+          <p>Manual Testing, Selenium Automation</p>
+        </div>
+        <div class="skill-card">
+          <h3>Version Control</h3>
+          <p>Git, GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section language">
+      <h2>Languages</h2>
+      <div class="lang-bar">
+        <span>English</span>
+        <div class="progress">
+          <div class="progress-fill" data-width="80%"></div>
+        </div>
+      </div>
+      <div class="lang-bar">
+        <span>Hindi</span>
+        <div class="progress">
+          <div class="progress-fill" data-width="80%"></div>
+        </div>
+      </div>
+      <div class="lang-bar">
+        <span>Odia</span>
+        <div class="progress">
+          <div class="progress-fill" data-width="100%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
       <ul>
         <li>
-          <span class="skill-name"><strong>Frontend Development</strong></span>
-          <p>
-            Proficient in frontend technologies for building responsive and
-            visually appealing web interfaces:
-          </p>
-          <ul>
-            <li class="frontend">
-              <span><strong>HTML</strong></span>
-              <p>
-                Strong foundation in HTML (Hypertext Markup Language) for
-                creating well-structured, semantic web pages.
-              </p>
-            </li>
-            <li class="frontend">
-              <span><strong>CSS</strong></span>
-              <p>
-                Proficient in CSS (Cascading Style Sheets) for designing web
-                interfaces. Familiar with Tailwind CSS framework for rapid
-                development.
-              </p>
-            </li>
-            <li class="frontend">
-              <span><strong>JavaScript</strong></span>
-              <p>
-                Skilled in JavaScript for building dynamic and interactive web
-                applications. Knowledge of modern JavaScript features and best
-                practices.
-              </p>
-            </li>
-            <li class="frontend">
-              <span><strong>Bootstrap Framework</strong></span>
-              <p>
-                Familiar with Bootstrap framework for rapid prototyping and
-                building responsive websites.
-              </p>
-            </li>
-          </ul>
+          <a href="https://nks199721.github.io/Portfolio/" target="_blank"
+            ><strong>My Web Portfolio</strong></a
+          >
+          - A responsive website showcasing my skills and projects, built with
+          HTML, CSS, and JS.
         </li>
         <li>
-          <span class="skill-name"><strong>Programming Skills</strong></span>
-          <p>Proficiency in various programming languages and concepts:</p>
-          <ul>
-            <li class="programming">
-              <span><strong>Python</strong></span>
-              <p>
-                Proficient in Python programming with a strong foundation in
-                core language concepts
-              </p>
-            </li>
-          </ul>
+          <a
+            href="https://react-portfolio-gamma-pearl.vercel.app/"
+            target="_blank"
+            ><strong>React_folio</strong></a
+          >
+          - A personal portfolio website built using React.js and Vite,
+          featuring responsive design, dark/light mode toggle, and smooth
+          navigation. Deployed on Vercel.
         </li>
         <li>
-          <span class="skill-name"><strong>Testing Skills</strong></span>
-          <p>Proficient in testing methodologies and tools:</p>
-          <ul>
-            <li class="testing">
-              <span><strong>Manual Testing</strong></span>
-              <p>Proficient in manual testing methodologies and techniques:</p>
-              <ul>
-                <li>
-                  Test Case Design and Execution: Skilled in designing test
-                  cases and executing them meticulously to ensure thorough
-                  testing coverage.
-                </li>
-                <li>
-                  Regression Testing: Experienced in performing regression tests
-                  to verify that recent code changes have not adversely affected
-                  existing functionality.
-                </li>
-                <li>
-                  Performance Testing: Capable of conducting performance tests
-                  to assess the responsiveness, stability, and scalability of
-                  applications under varying loads.
-                </li>
-                <li>
-                  User Acceptance Testing (UAT): Competent in facilitating UAT
-                  to ensure that software meets end-user requirements and
-                  expectations.
-                </li>
-              </ul>
-            </li>
-            <br />
-            <li class="testing">
-              <span><strong>Automation Testing</strong></span>
-              <p>
-                Proficient in automated testing using Selenium WebDriver with
-                Python, creating and executing robust test scripts for web
-                applications.
-              </p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <span class="skill-name"><strong>Version Control</strong></span>
-          <p>
-            Proficient in version control using Git, allowing for effective
-            collaboration.
-          </p>
-        </li>
-        <li>
-          <span class="skill-name"><strong>Database</strong></span>
-          <p>Knowledgeable in SQL for database management and querying.</p>
+          <a target="_blank"><strong>E-Commerece Web Application</strong></a>
+          - A full-stack e-commerce platform under development using MERN stack,
+          featuring user authentication, product listing, and cart
+          functionality. Planned integration of secure payment gateway and
+          responsive design.
         </li>
       </ul>
     </section>
 
-    <section class="certifications">
+    <section id="education" class="section education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>B.Tech in EEE</strong> - College Of Engineering Bhubaneswar
+          (2016-2020)
+        </li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="section certifications">
       <h2>Certifications</h2>
       <p>
-        <a href="https://www.hackerrank.com/certificates/iframe/8b0c2dbbcb7e"
+        <a
+          href="https://www.hackerrank.com/certificates/iframe/8fbd0cae4389"
+          target="_blank"
+          rel="noopener noreferrer"
+          >React (HackerRank)</a
+        >
+        |
+        <a
+          href="https://www.hackerrank.com/certificates/iframe/5bd836ee1a56"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Node (HackerRank)</a
+        >
+        |
+        <a
+          href="https://www.hackerrank.com/certificates/iframe/dbe44fc4f986"
+          target="_blank"
+          rel="noopener noreferrer"
+          >JavaScript (HackerRank)</a
+        >
+        |
+        <a
+          href="https://www.hackerrank.com/certificates/iframe/8b0c2dbbcb7e"
+          target="_blank"
+          rel="noopener noreferrer"
           >Python (HackerRank)</a
         >
         |
-        <a href="https://www.hackerrank.com/certificates/iframe/415e10b769cc"
+        <a
+          href="https://www.hackerrank.com/certificates/iframe/415e10b769cc"
+          target="_blank"
+          rel="noopener noreferrer"
           >SQL (HackerRank)</a
         >
-      </p>
-    </section>
-
-    <section class="language">
-      <h2>Languages</h2>
-      <ul>
-        <li>English</li>
-        <div class="progress-bar">
-          <div class="skill-level" style="width: 80%"></div>
-        </div>
-        <li>Hindi</li>
-        <div class="progress-bar">
-          <div class="skill-level" style="width: 80%"></div>
-        </div>
-        <li>Odia</li>
-        <div class="progress-bar">
-          <div class="skill-level" style="width: 100%"></div>
-        </div>
-      </ul>
-    </section>
-
-    <section class="education">
-      <h2>Education</h2>
-      <p>
-        <strong>College Of Engineering Bhubanewar -</strong> B.Tech (Electrical
-        and Electronics Engineering), 2016-2020
-      </p>
-      <p><strong>Stewart Science College -</strong> 10+2, 2014-2016</p>
-      <p><strong>D.A.V. Public School -</strong> 10th, 2014</p>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
-      <h4 style="color: black; text-decoration: underline">
+        |
         <a
-          href="https://nks199721.github.io/Portfolio/"
-          style="color: black"
+          href="https://www.hackerrank.com/certificates/iframe/239f09adb53f"
           target="_blank"
           rel="noopener noreferrer"
-          >My Web Portfolio</a
+          >CSS (HackerRank)</a
         >
-      </h4>
-      <p style="color: grey; margin-top: 0;">
+        |
         <a
-          href="https://nks199721.github.io/Portfolio/"
-          style="color: black"
+          href="https://coursera.org/share/63fdb0ef604fd830a97e254a6f709f2d"
           target="_blank"
           rel="noopener noreferrer"
-          >Developed a responsive personal portfolio website using HTML, CSS, and JavaScript. Showcases skills, projects, and experiences with dynamic elements, providing an interactive and user-friendly experience across devices.</a
+          >Excel (Coursera)</a
         >
-      </p>
-
-      <h4 style="color: black; text-decoration: underline">
         <a
-          href="https://react-portfolio-gamma-pearl.vercel.app/"
-          style="color: black"
+          href="https://www.hackerrank.com/certificates/iframe/dafd556ba74e"
           target="_blank"
           rel="noopener noreferrer"
-          >React_folio</a
-        >
-      </h4>
-      <p style="color: grey; margin-top: 0;">
-        <a
-          href="https://react-portfolio-gamma-pearl.vercel.app/"
-          style="color: black"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Built and deployed a responsive portfolio website using React with Vite and hosted on Vercel. Highlights skills, projects, and achievements with a sleek and interactive design.</a
+          >Software Engineer Intern (HackerRank)</a
         >
       </p>
     </section>
 
-    <section class="pdf">
-      <a
-        style="color: blue; text-decoration: underline"
-        id="open-resume-link"
-        href="files/NileshKumarSahoo_CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Open Resume</a
-      >
+    <section class="section pdf">
+      <button id="open-resume-btn">Open My Resume (PDF)</button>
     </section>
   </body>
 </html>
